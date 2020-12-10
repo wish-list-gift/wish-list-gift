@@ -6,6 +6,7 @@ const userSchema = new Schema({
     lastName: String,
     email: String,
     password: String,
+    friends: [{ type: Schema.Types.ObjectId, ref: "User" }],
 })
 
 

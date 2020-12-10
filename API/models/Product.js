@@ -6,7 +6,8 @@ const productSchema = new Schema({
     link: String,
     price: Number,
     image: String,
-    notes: String
+    notes: String,
+    author: [{ type: Schema.Types.ObjectId, ref: "User" }],
 })
 
 
