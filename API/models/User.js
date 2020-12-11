@@ -7,6 +7,7 @@ const userSchema = new Schema({
     email: String,
     password: String,
     friends: [{ type: Schema.Types.ObjectId, ref: "User" }],
+    productIds: [{ type: Schema.Types.ObjectId, ref: "Product" }],
 })
 
 
