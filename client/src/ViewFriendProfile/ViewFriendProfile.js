@@ -1,11 +1,11 @@
 import React from 'react';
 
-function ViewFriendProfile(props) {
+const ViewFriendProfile = () => {
     return (
         <div>
 
         </div>
     );
-}
+};
 
 export default ViewFriendProfile;

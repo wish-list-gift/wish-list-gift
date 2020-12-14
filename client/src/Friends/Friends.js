@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Friends(props) {
+const Friends = () => {
     return (
         <div>
 
         </div>
     );
-}
+};
 
 export default Friends;

@@ -1,11 +1,11 @@
 import React from 'react';
 
-function JoinSignIn(props) {
+const JoinSignIn = () => {
     return (
         <div>
 
         </div>
     );
-}
+};
 
 export default JoinSignIn;
