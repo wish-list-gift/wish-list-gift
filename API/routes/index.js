@@ -37,7 +37,9 @@ router.get("/profile", protectedRoute, (req, res) => {
         .then((products) => {
             res.json(products)
         })
-        .catch(err => console.log(err))
+        .catch(err => {
+            console.log(err)
+        })
 });
 
 router.get("/friends", protectedRoute, (req, res) => {
