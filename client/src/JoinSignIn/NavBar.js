@@ -4,39 +4,19 @@ import './NavBar.css';
 import logo from '../images/WishListGift.png'
 
 
+/* const state = () => {
+    showCollapsedMenu: false
+};
+const toggleMenu = () => {
+    this.setState({
+        showCollapsedMenu: !this.state.showCollapsedMenu
+      })
+}
+
+const show = () => {
+    (this.state.showCollapsedMenu) ? "show" : "" ;} */
+
 const NavBar = (props) => {
-    // return (
-    //     <div className="nav">
-    //         <div className="nav-container">
-    //             <div className='nav-home'>
-    //                 <Link to='/' className='nav-link'>
-    //                     <img id="logo" src={logo} alt="WishListGift - Home" />
-    //                 </Link>
-    //             </div>
-
-
-    //             <div className="nav-links">
-    //                 <Link to="/join-sign-in" className='nav-link'>Join/Sign In</Link>
-    //                 <Link to="/friends" className='nav-link'>Friends</Link>
-    //             </div>
-    //         </div>
-    //     </div>
-    // );
-
-
-    // const state = () => {
-    //     showCollapsedMenu: false
-    // };
-    // const toggleMenu = () => {
-    //     this.setState({
-    //         showCollapsedMenu: !this.state.showCollapsedMenu
-    //       })
-    // }
-
-    // const show = () => {
-    //     (this.state.showCollapsedMenu) ? "show" : "" ;}
-
-    //  function NavBar(props) {
 
     return (
         <div>
@@ -46,16 +26,16 @@ const NavBar = (props) => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className={"collapse navbar-collapse"} id="navbarNav">
+                <div className={"collapse navbar-collapse" /* + show */} id="navbarNav">
                     <ul className="navbar-nav mr-auto">
-                        <li className="nav-item active">
-                            <Link to='/join-sign-in' className="nav-link">Home <span className="sr-only">(current)</span></Link>
+                        <li className="nav-item">
+                            <Link to='/join-sign-in' className="nav-link">Sign in/Join<span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item">
                             <Link to='/friends' className="nav-link">Friends</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link disabled" href="#">Disabled</a>
+                            <Link to='/profile' className="nav-link">Profile</Link>
                         </li>
                     </ul>
                 </div>

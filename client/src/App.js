@@ -12,10 +12,10 @@ function App() {
   return (
     <>
       <NavBar />
-      <Home />
+
 
       <Switch>
-        {/* <Route exact path="/" render={(props) => <Home {...props} />} /> */}
+        <Route exact path="/" render={(props) => <Home {...props} />} />
         <Route exact path="/join-sign-in" render={(props) => <JoinSignIn {...props} />} />
         <Route exact path="/register" render={(props) => <SignUp {...props} />} />
         <Route exact path="/friends" render={(props) => <Friends {...props} />} />
