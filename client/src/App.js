@@ -11,8 +11,8 @@ function App() {
   return (
     <>
      {/* <NavBar /> */}
-    <Home />
-
+     <Home></Home>  
+{/* 
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} />} />
         <Route exact path="/join-sign-in" render={(props) => <JoinSignIn {...props} />} />
@@ -20,7 +20,7 @@ function App() {
 
 
       </Switch>
-
+ */}
 
     </>
   );

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Carousel } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css'
+import firstSlide from './img/presents.jpg'
 export class Home extends React.Component {
     render() {
         return (
@@ -17,9 +18,8 @@ export class Home extends React.Component {
                             <Carousel>
 
                                 <Carousel.Item>
-                                    <img
-                                        className="d-block w-100"
-                                        src="../../public/assets/img/presents.jpg"
+                                    <img className="d-block w-100"
+                                        src={firstSlide}
                                         alt="First slide"
                                     />
                                     <Carousel.Caption>

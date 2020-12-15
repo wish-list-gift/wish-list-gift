@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import logoTwo from '../public/assets/img/HappyWishing.png'
 import './JoinSignIn.css'
 
 const JoinSignIn = () => {
