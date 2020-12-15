@@ -9,14 +9,14 @@ export class Home extends React.Component {
         return (
             <div>
                 <div className='container'>
-                    <div className="img1 row" >
+                    <div className="row" >
                         <div className="col-12">
                             <Carousel >
                                 <Carousel.Item>
                                     <img className="d-block w-100"
                                         src={firstSlide}
                                         alt="First slide"
-                                        style={{ height: "60vh" }}
+                            
                                     />
                                     <Carousel.Caption>
                                         <h1>Wish it, List it, Gift it!</h1>
@@ -28,7 +28,6 @@ export class Home extends React.Component {
                                         className="d-block w-100"
                                         src={firstSlide}
                                         alt="Second slide"
-                                        style={{ height: "60vh" }}
                                     />
                                     <Carousel.Caption>
                                         <h3>Second slide label</h3>
@@ -40,7 +39,6 @@ export class Home extends React.Component {
                                         className="d-block w-100"
                                         src={firstSlide}
                                         alt="Third slide"
-                                        style={{ height: "60vh" }}
                                     />
                                     <Carousel.Caption>
                                         <h3>Third slide label</h3>

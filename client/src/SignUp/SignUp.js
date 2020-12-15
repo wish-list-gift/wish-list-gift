@@ -7,9 +7,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default class SignUp extends Component {
     render() {
         return (
-            <div className='container bg'>
-                <div className="row">        
-                    <form className="col-12 col-sm-3 sign-up-group">
+            <div className='container'>
+                <div className="row bg">        
+                    <form className="col-12 col-sm-4">
                         <h3>Sign Up</h3>
                         <div className="form-group ">
                             <label>First name</label>
