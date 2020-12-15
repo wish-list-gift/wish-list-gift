@@ -19,7 +19,7 @@ export class Home extends React.Component {
                                         style={{ height: "60vh" }}
                                     />
                                     <Carousel.Caption>
-                                        <h3>First slide label</h3>
+                                        <h1>Wish it, List it, Gift it!</h1>
                                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                                     </Carousel.Caption>
                                 </Carousel.Item>
