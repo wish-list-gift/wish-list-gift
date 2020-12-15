@@ -1,4 +1,4 @@
-/* 
+ 
 .sign-up-group {
     position: relative;
     top: 200px;
@@ -13,16 +13,16 @@
     flex-direction: column;
     align-items: center;
 }
- */
+
 
 .bg {
     background-image: url(../images/SignUpBG.png);
-    height: 93vw;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
    }
 
-/*    .container{
+   .container{
        overflow-y: hidden;
-   } */
+   } 
