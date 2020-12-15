@@ -10,7 +10,7 @@ import { Link, Switch, Route } from 'react-router-dom'
 function App() {
   return (
     <>
-     {/* <NavBar /> */}
+     <NavBar />
      <Home></Home>  
 {/* 
       <Switch>
