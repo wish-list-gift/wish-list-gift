@@ -14,10 +14,10 @@ import logo from '../images/WishListGift.png'
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                    <Link to ='/' className="navbar-brand"><img id="logo" src={logo} alt="WishListGift"></img></Link>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
+                <Link to='/' className="navbar-brand"><img id="logo" src={logo} alt="WishListGift"></img></Link>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
 
                 <div className={"collapse navbar-collapse"}  id="navbarNav">
                     <ul className="navbar-nav mr-auto" >
@@ -35,5 +35,5 @@ import logo from '../images/WishListGift.png'
             </nav>
         </div>
     );
- }
+}
 export default NavBar;
