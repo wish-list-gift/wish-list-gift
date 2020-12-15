@@ -1,21 +1,47 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
-import './JoinSignIn.css'
+import React, { useState } from 'react';
+import { useHistory, Link } from 'react-router-dom'
 import logoTwo from '../images/HappyWishing.png'
+import './JoinSignIn.css'
+import axios from 'axios'
+
 
 const JoinSignIn = () => {
+    const history = useHistory()
+    const [userLoginInfo, setuserLoginInfo] = useState({
+        email: '',
+        password: '',
+    })
+    const handleChange = (e => {
+        setuserLoginInfo({
+            ...userLoginInfo,
+            [e.target.name]: e.target.value,
+        })
+    })
+    const submitLogin = (e) => {
+        e.preventDefault()
+        axios.post("http://localhost:3000/login")
+            .then(res => {
+                console.log('user login');
+                localStorage.setItem('token', res.data.token);
+                history.push('/profile')
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
+
     return (
         <div className="login-container">
             <h1 className="welcome">Welcome!</h1>
             <h2 className="sign-in">Sign In</h2>
-            <form className="sign-in-form">
+            <form className="sign-in-form" onSubmit={submitLogin}>
                 <div className="form-group">
                     <label for="email">Email </label>
-                    <input type="email" placeholder="Enter Email" name="email" required></input>
+                    <input type="email" placeholder="Enter Email" name="email" onChange={handleChange} required></input>
                     <br />
                     <br />
                     <label for="password">Password </label>
-                    <input type="password" placeholder="Enter Password" name="password" required></input>
+                    <input type="password" placeholder="Enter Password" name="password" onChange={handleChange} required></input>
                 </div>
                 <br />
                 <br />
