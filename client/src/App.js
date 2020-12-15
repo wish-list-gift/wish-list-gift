@@ -1,17 +1,18 @@
 import './App.css';
+import Home from './Home.js'
 import React from 'react';
 import NavBar from './JoinSignIn/NavBar.js';
 import SignUp from './SignUp/SignUp.js';
 import JoinSignIn from './JoinSignIn/JoinSignIn'
-
 import { Link, Switch, Route } from 'react-router-dom'
-import Home from './Home'
+
 
 function App() {
   return (
     <>
-      <NavBar />
-
+     {/* <NavBar /> */}
+     <Home></Home>  
+{/* 
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} />} />
         <Route exact path="/join-sign-in" render={(props) => <JoinSignIn {...props} />} />
@@ -19,7 +20,7 @@ function App() {
 
 
       </Switch>
-
+ */}
 
     </>
   );
