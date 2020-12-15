@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Tajawal:wght@300&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
 
 .login-container {
     background: #a2ddd8;
@@ -24,8 +26,9 @@
 }
 
 #happy-wishing {
-    display: flex;
-    width: 90vw;
+   font-family: 'Playfair Display', serif;
+   font-size: 5rem;
+   color: #dcb239;
 
 }
 
@@ -55,3 +58,9 @@
     display: flex;
     justify-content: center;
 }
+
+/* @media (min-width: 426px) {
+    #happy-wishing {
+        width: 50vw;
+    }
+} */
