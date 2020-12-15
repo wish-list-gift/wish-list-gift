@@ -3,6 +3,7 @@ import { Carousel } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css'
 import firstSlide from './img/presents.jpg'
+import wishes from './img/Wishes.jpg'
 export class Home extends React.Component {
     render() {
         return (
@@ -14,7 +15,7 @@ export class Home extends React.Component {
                         </div>
                     </div> */}
                     <div className="row d-flex justify-content-center">
-                        <div className="col-8">
+                        <div className="col-5">
                             <Carousel>
 
                                 <Carousel.Item>
@@ -31,7 +32,7 @@ export class Home extends React.Component {
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        src="../../public/assets/img/presents.jpg"
+                                        src={firstSlide}
                                         alt="Second slide"
                                     />
 
@@ -44,7 +45,7 @@ export class Home extends React.Component {
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        src="../../public/assets/img/presents.jpg"
+                                        src={firstSlide}
                                         alt="Third slide"
                                     />
                                     <Carousel.Caption>
@@ -57,14 +58,38 @@ export class Home extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="circleImg row-fluid d-flex justify-content-around">
-                    <img className="rounded-circle" alt="100x100" src="../../public/assets/img/presents.jpg"
+                <div className="container-fluid">
+                <div className="row d-flex justify-content-center" style={{width: "13rem"}}>
+                    <img className="card-img-top" src={wishes} alt="Card image cap" />
+                        <div className="card-body">
+                             <h5 className="card-title">Wish</h5>
+                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                             <a href="#" class="btn btn-primary"> Start Wishing </a>
+                        </div>
+                        <img className="card-img-top" src={wishes} alt="Card image cap" />
+                        <div className="card-body">
+                             <h5 className="card-title">List</h5>
+                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                             <a href="#" class="btn btn-primary"> Start Listing </a>
+                        </div>
+                        <img className="card-img-top" src={wishes} alt="Card image cap" />
+                        <div className="card-body">
+                             <h5 className="card-title">Gift</h5>
+                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                             <a href="#" class="btn btn-primary"> Start Gifting </a>
+                        </div>
+                </div>
+                </div>
+
+
+{/*                 <div className="circleImg row-fluid d-flex justify-content-center">
+                    <img className="rounded-circle" alt="100x100" src={wishes}
                         />
-                    <img className="rounded-circle" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
+                    <img className="rounded-circle" alt="100x100" src={wishes}
                         />
-                    <img className="rounded-circle z-depth-2" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
+                    <img className="rounded-circle z-depth-2" alt="100x100" src={wishes}
                          />
-                    </div>
+                </div> */}
             </div>
         )
     };

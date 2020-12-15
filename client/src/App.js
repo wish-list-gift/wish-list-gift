@@ -1,9 +1,9 @@
 import './App.css';
 import Home from './Home.js'
 import React from 'react';
-import NavBar from './NavBar.js';
-import SignUp from './SignUp.js';
-import JoinSignIn from './JoinSignIn'
+import NavBar from './JoinSignIn/NavBar.js';
+import SignUp from './SignUp/SignUp.js';
+import JoinSignIn from './JoinSignIn/JoinSignIn'
 import { Link, Switch, Route } from 'react-router-dom'
 
 
