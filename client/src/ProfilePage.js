@@ -1,11 +1,11 @@
 import React from 'react';
 
-function ProfilePage(props) {
+const ProfilePage = () => {
     return (
         <div>
 
         </div>
     );
-}
+};
 
 export default ProfilePage;

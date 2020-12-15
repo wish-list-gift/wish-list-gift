@@ -1,11 +1,11 @@
 import React from 'react';
 
-function SignUp(props) {
+const ViewFriendProfile = () => {
     return (
         <div>
 
         </div>
     );
-}
+};
 
-export default SignUp;
+export default ViewFriendProfile;

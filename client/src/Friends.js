@@ -1,11 +1,11 @@
 import React from 'react';
 
-function JoinSignIn(props) {
+const Friends = () => {
     return (
         <div>
 
         </div>
     );
-}
+};
 
-export default JoinSignIn;
+export default Friends;
