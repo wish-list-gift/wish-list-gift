@@ -17,10 +17,12 @@
 
 .bg {
     background-image: url(../images/SignUpBG.png);
-    height:80vh;
+    height:92vh;
     background-position: center;
-  
-    background-size: cover;
-   
+    background-repeat: no-repeat;
+    background-size: contain;
+   }
 
-    }
+   .container{
+       overflow-y: hidden;
+   }

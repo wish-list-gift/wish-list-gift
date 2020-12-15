@@ -3,14 +3,12 @@ import { Carousel } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css'
 import firstSlide from './images/presents.jpg'
-import wish from './images/make-a-wish.png'
-import list from './images/list.jpg'
-import gift from './images/pink-gift.jpeg'
+import wishes from './images/Wishes.jpg'
 export class Home extends React.Component {
     render() {
         return (
             <div>
-                <div className='container-xl'>
+                <div className='container'>
                     <div className="img1 row" >
                         <div className="col-12">
                             <Carousel >
@@ -56,7 +54,7 @@ export class Home extends React.Component {
                     <div className="row">
                         <div className="col-12 col-sm-4">
                             <div className=" card-body">
-                                <img className="card-img-top" src={wish} alt="Card image cap" style={{ height: "30vh", width: "20vw" }} />
+                                <img className="card-img-top" src={wishes} alt="Card image cap" />
                                 <h5 className="card-title">Wish It</h5>
                                 <p className="card-text">Got a wish? Have all your wishes come true by creating a profile full of all your hearts desires!</p>
 
@@ -64,7 +62,7 @@ export class Home extends React.Component {
                         </div>
                         <div className="col-12 col-sm-4">
                             <div className="card-body">
-                                <img className="card-img-top" src={list} alt="Card image cap" style={{ height: "30vh", width: "20vw" }} />
+                                <img className="card-img-top" src={wishes} alt="Card image cap" />
                                 <h5 className="card-title">List It</h5>
                                 <p className="card-text">Make a list of all your wishes and have your friends and family checkout what you'd love most for any occasion.</p>
 
@@ -72,7 +70,7 @@ export class Home extends React.Component {
                         </div>
                         <div className="col-12 col-sm-4">
                             <div className="card-body">
-                                <img className="card-img-top" src={gift} alt="Card image cap" style={{ height: "30vh", width: "20vw" }} />
+                                <img className="card-img-top" src={wishes} alt="Card image cap" />
                                 <h5 className="card-title">Gift It</h5>
                                 <p className="card-text">No idea what to get your friends/family? Check out their wish list to gift them everything they've ever wanted!</p>
 
