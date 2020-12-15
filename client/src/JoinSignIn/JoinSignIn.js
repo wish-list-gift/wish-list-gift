@@ -5,7 +5,7 @@ import './JoinSignIn.css'
 import axios from 'axios'
 
 
-const JoinSignIn = () => {
+const JoinSignIn = (props) => {
     const history = useHistory()
     const [userLoginInfo, setuserLoginInfo] = useState({
         email: '',

@@ -11,8 +11,13 @@ import { Link, Switch, Route } from 'react-router-dom'
 function App() {
   return (
     <>
+<<<<<<< HEAD
       <NavBar />
 
+=======
+     <NavBar />
+  
+>>>>>>> 241a7dba454ca6ba48c1607316536cb319fef519
 
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} />} />

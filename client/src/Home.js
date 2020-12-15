@@ -57,7 +57,7 @@ export class Home extends React.Component {
                                 <img className="card-img-top" src={wishes} alt="Card image cap" />
                                 <h5 className="card-title">Wish</h5>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
+                                <a href="#" class="btn btn-primary"> Start Wishing </a>
                             </div>
                         </div>
                         <div className="col-12 col-sm-4">
@@ -65,7 +65,7 @@ export class Home extends React.Component {
                                 <img className="card-img-top" src={wishes} alt="Card image cap" />
                                 <h5 className="card-title">List</h5>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
+                                <a href="#" class="btn btn-primary"> Start Listing </a>
                             </div>
                         </div>
                         <div className="col-12 col-sm-4">
@@ -73,7 +73,7 @@ export class Home extends React.Component {
                                 <img className="card-img-top" src={wishes} alt="Card image cap" />
                                 <h5 className="card-title">Gift</h5>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
+                                <a href="#" class="btn btn-primary"> Start Gifting </a>
                             </div>
                         </div>
 
