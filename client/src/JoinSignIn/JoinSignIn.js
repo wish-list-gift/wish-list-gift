@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import './JoinSignIn.css'
+import logoTwo from '../images/HappyWishing.png'
 
 const JoinSignIn = () => {
     return (
@@ -26,7 +27,7 @@ const JoinSignIn = () => {
 
             </form>
             <br />
-            <img id="happy-wishing" src="../public/assets/img/HappyWishing.png" alt="Happy Wishing!" />
+            <img id="happy-wishing" src={logoTwo} alt="Happy Wishing!" />
 
         </div>
     );
