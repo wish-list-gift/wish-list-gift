@@ -19,11 +19,12 @@ const JoinSignIn = (props) => {
     })
     const submitLogin = (e) => {
         e.preventDefault()
-        axios.post("http://localhost:3000/login")
+        axios.post("http://localhost:3000/users/login", userLoginInfo)
             .then(res => {
                 console.log('user login');
                 localStorage.setItem('token', res.data.token);
-                history.push('/profile')
+                props.history.push('/profile')
+                console.log(props.history)
             })
             .catch(error => {
                 console.log(error)
