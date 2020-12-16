@@ -16,7 +16,7 @@ export class Home extends React.Component {
                                     <img className="d-block w-100"
                                         src={firstSlide}
                                         alt="First slide"
-                            
+        
                                     />
                                     <Carousel.Caption>
                                         <h1>Wish it, List it, Gift it!</h1>
